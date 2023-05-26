@@ -1,7 +1,7 @@
 # lab08
 
 ## Lab8
-nano Dockerfile-client
+ Dockerfile-client
 ```
 FROM ubuntu:22.10
 
@@ -12,7 +12,7 @@ ENV SERVER_URL http://google.com
 ENTRYPOINT bash -c "while true ; do sleep 5 && curl -qq $SERVER_URL; done" 
 ```
 ==========================================================
-nano Dockerfile-server
+ Dockerfile-server
 ```
 FROM ubuntu:22.10
 
@@ -32,7 +32,7 @@ EXPOSE 3000
 POINT ["npm", "start"]
 ```
 ===========================================================
-nano db.json
+ db.json
 ```
 {
   "users": [
@@ -50,7 +50,7 @@ nano db.json
 }
 ```
 ========================================================
-nano package.json
+ package.json
 ```
 
 {
@@ -73,7 +73,7 @@ nano package.json
 }
 ```
 =====================================================
-nano docker-compose.yml
+docker-compose.yml
 ```
 version: '3.9'
 
